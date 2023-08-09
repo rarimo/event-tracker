@@ -1,0 +1,33 @@
+configVersion: 1
+project: 'backend'
+---
+image: builder
+from: golang:1.19-alpine
+docker:
+  WORKDIR: /go/src/gitlab.com/rarimo/identity/event-tracker
+git:
+  - add: /
+    to: /go/src/gitlab.com/rarimo/identity/event-tracker
+    stageDependencies:
+      setup:
+        - "**/*"
+shell:
+  setup:
+    - export CGO_ENABLED=0
+    - export GO111MODULE=off
+    - export GOOS=linux
+    - go build  -o /usr/local/bin/event-tracker  /go/src/gitlab.com/rarimo/identity/event-tracker
+
+---
+image: service
+from: alpine:3.9
+docker:
+  ENTRYPOINT: event-tracker
+shell:
+  setup:
+    - apk add --no-cache ca-certificates
+import:
+  - image: builder
+    add: /usr/local/bin/event-tracker
+    to: /usr/local/bin/event-tracker
+    after: setup
