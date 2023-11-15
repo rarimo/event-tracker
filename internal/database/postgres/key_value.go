@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"github.com/Masterminds/squirrel"
 	"github.com/fatih/structs"
+	"github.com/rarimo/event-tracker/internal/database"
 	"gitlab.com/distributed_lab/kit/pgdb"
-	"gitlab.com/rarimo/identity/event-tracker/internal/database"
 )
 
 const (

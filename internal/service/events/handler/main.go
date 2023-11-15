@@ -5,10 +5,10 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/rarimo/event-tracker/internal/contracts"
+	"github.com/rarimo/event-tracker/internal/service/galxe"
 	"gitlab.com/distributed_lab/logan/v3"
 	"gitlab.com/distributed_lab/logan/v3/errors"
-	"gitlab.com/rarimo/identity/event-tracker/internal/contracts"
-	"gitlab.com/rarimo/identity/event-tracker/internal/service/galxe"
 	"strings"
 )
 

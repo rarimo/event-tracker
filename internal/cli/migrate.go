@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"gitlab.com/rarimo/identity/event-tracker/internal/assets"
-	"gitlab.com/rarimo/identity/event-tracker/internal/config"
+	"github.com/rarimo/event-tracker/internal/assets"
+	"github.com/rarimo/event-tracker/internal/config"
 
 	migrate "github.com/rubenv/sql-migrate"
 	"gitlab.com/distributed_lab/logan/v3/errors"

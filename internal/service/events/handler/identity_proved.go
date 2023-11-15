@@ -3,9 +3,9 @@ package handler
 import (
 	"context"
 	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/rarimo/event-tracker/internal/contracts"
 	"gitlab.com/distributed_lab/logan/v3"
 	"gitlab.com/distributed_lab/logan/v3/errors"
-	"gitlab.com/rarimo/identity/event-tracker/internal/contracts"
 )
 
 // HandleIdentityProvedEvent handles IdentityProved event.

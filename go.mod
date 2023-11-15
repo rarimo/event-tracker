@@ -1,4 +1,4 @@
-module gitlab.com/rarimo/identity/event-tracker
+module github.com/rarimo/event-tracker
 
 go 1.19
 

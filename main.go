@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"gitlab.com/rarimo/identity/event-tracker/internal/cli"
+	"github.com/rarimo/event-tracker/internal/cli"
 )
 
 func main() {

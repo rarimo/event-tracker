@@ -2,8 +2,8 @@ package cli
 
 import (
 	"context"
-	"gitlab.com/rarimo/identity/event-tracker/internal/config"
-	"gitlab.com/rarimo/identity/event-tracker/internal/service"
+	"github.com/rarimo/event-tracker/internal/config"
+	"github.com/rarimo/event-tracker/internal/service"
 	"os"
 	"os/signal"
 	"sync"

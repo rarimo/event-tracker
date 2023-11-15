@@ -6,8 +6,8 @@ import (
 
 	"github.com/Masterminds/squirrel"
 	"github.com/fatih/structs"
+	data "github.com/rarimo/event-tracker/internal/database"
 	"gitlab.com/distributed_lab/kit/pgdb"
-	data "gitlab.com/rarimo/identity/event-tracker/internal/database"
 )
 
 const processedTxsTableName = "processed_txs"

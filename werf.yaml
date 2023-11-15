@@ -4,10 +4,10 @@ project: 'backend'
 image: builder
 from: golang:1.19-alpine
 docker:
-  WORKDIR: /go/src/gitlab.com/rarimo/identity/event-tracker
+  WORKDIR: /go/src/github.com/rarimo/event-tracker
 git:
   - add: /
-    to: /go/src/gitlab.com/rarimo/identity/event-tracker
+    to: /go/src/github.com/rarimo/event-tracker
     stageDependencies:
       setup:
         - "**/*"
@@ -16,7 +16,7 @@ shell:
     - export CGO_ENABLED=0
     - export GO111MODULE=off
     - export GOOS=linux
-    - go build  -o /usr/local/bin/event-tracker  /go/src/gitlab.com/rarimo/identity/event-tracker
+    - go build  -o /usr/local/bin/event-tracker  /go/src/github.com/rarimo/event-tracker
 
 ---
 image: service

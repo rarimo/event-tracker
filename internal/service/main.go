@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
-	"gitlab.com/rarimo/identity/event-tracker/internal/config"
-	"gitlab.com/rarimo/identity/event-tracker/internal/database/postgres"
-	"gitlab.com/rarimo/identity/event-tracker/internal/service/events/handler"
-	"gitlab.com/rarimo/identity/event-tracker/internal/service/events/tracker"
-	"gitlab.com/rarimo/identity/event-tracker/internal/service/galxe"
+	"github.com/rarimo/event-tracker/internal/config"
+	"github.com/rarimo/event-tracker/internal/database/postgres"
+	"github.com/rarimo/event-tracker/internal/service/events/handler"
+	"github.com/rarimo/event-tracker/internal/service/events/tracker"
+	"github.com/rarimo/event-tracker/internal/service/galxe"
 )
 
 // Run runs the service

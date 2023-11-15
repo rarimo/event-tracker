@@ -1,8 +1,8 @@
 package postgres
 
 import (
+	"github.com/rarimo/event-tracker/internal/database"
 	"gitlab.com/distributed_lab/kit/pgdb"
-	"gitlab.com/rarimo/identity/event-tracker/internal/database"
 )
 
 // serviceDb is a struct that implements database.Database interface

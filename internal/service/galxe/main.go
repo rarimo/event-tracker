@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/rarimo/event-tracker/internal/config"
 	"gitlab.com/distributed_lab/logan/v3/errors"
-	"gitlab.com/rarimo/identity/event-tracker/internal/config"
 	"io"
 	"net/http"
 )
